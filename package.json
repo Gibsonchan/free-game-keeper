@@ -1,0 +1,22 @@
+{
+  "name": "free-game-keeper",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/cli.mjs serve",
+    "run": "node --disable-warning=ExperimentalWarning src/cli.mjs run",
+    "detect": "node --disable-warning=ExperimentalWarning src/cli.mjs detect",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.mjs",
+    "build:vendor": "node --disable-warning=ExperimentalWarning scripts/build-vendor.mjs",
+    "postinstall": "npm run build:vendor",
+    "privacy": "node scripts/check-public-tree.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.64.1"
+  }
+}

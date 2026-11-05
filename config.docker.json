@@ -1,0 +1,7 @@
+{
+  "intervalHours": 6,
+  "retryMinutes": 30,
+  "includeDlc": true,
+  "enabledStores": ["epic", "steam"],
+  "browserChannel": null
+}

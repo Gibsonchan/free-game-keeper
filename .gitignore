@@ -1,0 +1,49 @@
+# Dependencies and developer caches
+node_modules/
+.npm-cache/
+.cache/
+.tools/
+.publish-tools/
+coverage/
+playwright-report/
+test-results/
+
+# User configuration and credentials
+.env
+.env.*
+!.env.example
+config.json
+config.local*.json
+*.secret.json
+master.key
+webhook*.txt
+hosts.yml
+
+# Runtime state, paired connector and browser profiles
+data/
+data-*/
+runtime/
+browser-profile*/
+storage-state*.json
+cookies*.json
+extension/config.js
+*.lock
+!package-lock.json
+*.log
+*.jsonl
+*.tmp
+ACCEPTANCE.md
+
+# Private media and exports
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.zip
+
+# OS/editor state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

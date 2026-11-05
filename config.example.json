@@ -1,0 +1,14 @@
+{
+  "intervalHours": 6,
+  "retryMinutes": 30,
+  "country": null,
+  "includeDlc": true,
+  "enabledStores": [
+    "epic",
+    "steam"
+  ],
+  "port": 18769,
+  "browserChannel": "msedge",
+  "browserProxy": "direct",
+  "epicWebMode": "extension"
+}

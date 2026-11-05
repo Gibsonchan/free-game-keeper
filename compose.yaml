@@ -1,0 +1,10 @@
+services:
+  keeper:
+    build: .
+    restart: unless-stopped
+    init: true
+    shm_size: 1gb
+    volumes:
+      - ./data:/app/data
+      - ./config.docker.json:/app/config.json:ro
+    # No published port: Docker mode is a headless worker, not a remote login desktop.

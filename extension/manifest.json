@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "免费游戏助手 · Epic 连接器",
+  "version": "0.1.1",
+  "description": "在已登录的 Chrome 中完成零元 Epic 结账，由本机助手核实入库并通知。",
+  "permissions": ["alarms", "tabs", "scripting", "storage"],
+  "host_permissions": ["https://store.epicgames.com/*", "https://www.epicgames.com/*", "http://127.0.0.1/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "免费游戏助手", "default_popup": "popup.html"}
+}
